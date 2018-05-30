@@ -1,3 +1,15 @@
+# -*- coding: utf-8 -*-
+#!/usr/bin/python
+'''
+Author: SARBAJIT MUKHERJEE
+Email: sarbajit.mukherjee@aggiemail.usu.edu
+
+$python svm_validate.py
+Create a base directory with the name and the corresponding data.
+The mother should already be created. If not then uncomment the corresponding
+section to generate the mother vector files
+'''
+
 import numpy as np
 import os
 import glob

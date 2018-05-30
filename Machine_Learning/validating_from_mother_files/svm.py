@@ -1,4 +1,14 @@
-### Mother vector based classifier
+# -*- coding: utf-8 -*-
+#!/usr/bin/python
+'''
+Author: SARBAJIT MUKHERJEE
+Email: sarbajit.mukherjee@aggiemail.usu.edu
+
+$python knn.py
+Create a base directory with the name and the corresponding data.
+The mother vector files should already be created.
+'''
+
 import pylab
 import numpy as np
 import matplotlib.pyplot as plt
