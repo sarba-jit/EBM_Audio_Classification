@@ -30,7 +30,7 @@ from sklearn.model_selection import GridSearchCV
 import matplotlib.colors
 from sklearn.grid_search import GridSearchCV
 
-base_dir = 'three_way_audio_test/'
+base_dir = 'BUZZ1/'
 sub_dir = ['bee','noise','cricket']
 
 def readingfiles_and_plotting_spectogram(number_of_files_to_read) :
@@ -90,7 +90,7 @@ def generating_mother_vector_files_cricket(number_of_files_to_read) :
         create_mother_vector(file_name)
 
 def generate_mother_vector_out_of_sample():
-    os.chdir("three_way_audio_test/out_of_sample/")
+    os.chdir("BUZZ1/out_of_sample/")
     for filename in glob.glob('*.wav'):
         create_mother_vector(filename)
 
@@ -213,10 +213,10 @@ def roc_multiclass(X,y):
         plt.legend(loc="lower right")
         #plt.show()
         if i ==0:
-            plt.savefig('three_way_audio_test/figures/roc1.png')
+            plt.savefig('BUZZ1/figures/roc1.png')
         elif i ==1:
-            plt.savefig('three_way_audio_test/figures/roc2.png')
+            plt.savefig('BUZZ1/figures/roc2.png')
         else:
-            plt.savefig('three_way_audio_test/figures/roc3.png')
+            plt.savefig('BUZZ1/figures/roc3.png')
 
 #roc_multiclass(X,y)

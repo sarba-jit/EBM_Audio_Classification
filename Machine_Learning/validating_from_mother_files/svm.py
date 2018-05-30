@@ -41,7 +41,7 @@ from sklearn.metrics import recall_score
 from sklearn.metrics import f1_score
 from sklearn.metrics import accuracy_score
 
-base_dir = 'three_way_audio_test/'
+base_dir = 'BUZZ1/'
 sub_dir = ['bee','noise','cricket']
 
 ## Reading the files and creating feature and response object

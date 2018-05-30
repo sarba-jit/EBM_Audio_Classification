@@ -19,7 +19,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn import preprocessing
 import pickle
 
-base_dir = 'three_way_audio_test/'
+base_dir = 'BUZZ1/'
 sub_dir = ['bee','noise','cricket']
 
 ## Reading the files and creating feature and response object

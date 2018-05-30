@@ -22,7 +22,7 @@ from sklearn.metrics import f1_score
 from sklearn.metrics import accuracy_score
 
 
-base_dir = 'three_way_audio_test/out_of_sample_data_for_testing/'
+base_dir = 'BUZZ1/out_of_sample_data_for_validation/'
 sub_dir = ['bee_test','noise_test','cricket_test']
 
 ###########generating mother files for out-of-sample data##################

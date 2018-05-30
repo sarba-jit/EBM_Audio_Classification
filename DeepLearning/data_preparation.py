@@ -51,7 +51,7 @@ data ={}
 Y = []
 
 ###########Buzz Train#################
-buzz_path = 'bee/'
+buzz_path = 'BUZZ1/bee/'
 
 for root, dirs, files in os.walk(buzz_path):
     for item in files:
@@ -67,7 +67,7 @@ for root, dirs, files in os.walk(buzz_path):
 ######################################
 
 ###########Noise Train#################
-noise_path = 'noise/'
+noise_path = 'BUZZ1/noise/'
 
 for root, dirs, files in os.walk(noise_path):
     for item in files:
@@ -82,7 +82,7 @@ for root, dirs, files in os.walk(noise_path):
 ######################################
 
 ###########Cricket Train#################
-cricket_path = 'cricket/'
+cricket_path = 'BUZZ1/cricket/'
 
 for root, dirs, files in os.walk(cricket_path):
     for item in files:

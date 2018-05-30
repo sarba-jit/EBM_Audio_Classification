@@ -24,14 +24,11 @@ from audioChunking import audio_input_for_chunking
 AUDIO_LENGTH = 20000
 NEW_SAMPLERATE = 12000
 
-ORIGINAL_AUDIO_FOLDER  = 'Test_Data/whole_sounds/'
-CHUNKED_AUDIO_FOLDER = 'Test_Data/chunked_sounds/'
-RESAMPLED_AUDIO_FOLDER = 'Test_Data/Data_Resampled/'
 
 ##################################
-CHUNKED_AUDIO_FOLDER = 'out_of_sample_data/bee_test/'
-# CHUNKED_AUDIO_FOLDER = 'out_of_sample_data/cricket_test/'
-# CHUNKED_AUDIO_FOLDER = 'out_of_sample_data/noise_test/'
+CHUNKED_AUDIO_FOLDER = 'BUZZ1/out_of_sample_data_for_validation/bee_test/'
+# CHUNKED_AUDIO_FOLDER = 'BUZZ1/out_of_sample_data_for_validation/bee_test/'
+# CHUNKED_AUDIO_FOLDER = 'BUZZ1/out_of_sample_data_for_validation/bee_test/'
 #################################
 
 

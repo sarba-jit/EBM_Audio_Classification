@@ -29,7 +29,7 @@ from sklearn.model_selection import GridSearchCV
 import matplotlib.colors
 import time
 
-base_dir = 'three_way_audio_test/'
+base_dir = 'BUZZ1/'
 sub_dir = ['bee','noise','cricket']
 
 def readingfiles_and_plotting_spectogram(number_of_files_to_read) :
@@ -47,7 +47,7 @@ def readingfiles_and_plotting_spectogram(number_of_files_to_read) :
         plt.xlabel("Time")
         plt.ylabel("Frequency")
         specgram(X, Fs=sample_rate, xextent= None)
-        plt.savefig('three_way_audio_test/spectograms/' + heading + ".png", dpi = 100)
+        plt.savefig('BUZZ1/spectograms/' + heading + ".png", dpi = 100)
         plt.show()
 
 
@@ -77,23 +77,23 @@ def create_mother_vector(file_name):
 
 
 def generating_mother_vector_files_bee() :
-    os.chdir("three_way_audio_test/bee/")
+    os.chdir("BUZZ1/bee/")
     for filename in glob.glob('*.wav'):
         create_mother_vector(filename)
 
 
 def generating_mother_vector_files_noise() :
-    os.chdir("three_way_audio_test/noise/")
+    os.chdir("BUZZ1/noise/")
     for filename in glob.glob('*.wav'):
         create_mother_vector(filename)
 
 def generating_mother_vector_files_cricket() :
-    os.chdir("three_way_audio_test/cricket/")
+    os.chdir("BUZZ1/cricket/")
     for filename in glob.glob('*.wav'):
         create_mother_vector(filename)
 
 def generate_mother_vector_out_of_sample():
-    os.chdir("three_way_audio_test/out_of_sample/noise_test")
+    os.chdir("BUZZ1/out_of_sample/noise_test")
     for filename in glob.glob('*.wav'):
         create_mother_vector(filename)
 
@@ -123,7 +123,7 @@ X_unscaled ,y = read_mother_vector()
 def read_out_of_sample():
     D = []
     L = []
-    os.chdir("journal_three_way_audio_test/out_of_sample/bee_test/mother_files")
+    os.chdir("BUZZ1/out_of_sample/bee_test/mother_files")
     for files in glob.glob('*.mvector.npy'):
         value = np.load(files)
         D.append(value[:])

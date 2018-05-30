@@ -29,7 +29,7 @@ from sklearn.model_selection import GridSearchCV
 import matplotlib.colors
 
 
-base_dir = 'three_way_audio_test/'
+base_dir = 'BUZZ1/'
 sub_dir = ['bee','noise','cricket']
 
 def readingfiles_and_plotting_spectogram(number_of_files_to_read) :
@@ -45,7 +45,7 @@ def readingfiles_and_plotting_spectogram(number_of_files_to_read) :
         plt.xlabel("Time")
         plt.ylabel("Frequency")
         specgram(X, Fs=sample_rate, xextent= None)
-        plt.savefig('/three_way_audio_test/spectograms/' + heading + ".png", dpi = 100)
+        plt.savefig('/BUZZ1/spectograms/' + heading + ".png", dpi = 100)
         #plt.show()
 
 #readingfiles_and_plotting_spectogram(50)
@@ -89,7 +89,7 @@ def generating_mother_vector_files_cricket(number_of_files_to_read) :
         create_mother_vector(file_name)
 
 def generate_mother_vector_out_of_sample():
-    os.chdir("/three_way_audio_test/out_of_sample/")
+    os.chdir("/BUZZ1/out_of_sample/")
     for filename in glob.glob('*.wav'):
         create_mother_vector(filename)
 
@@ -175,7 +175,7 @@ def plot_with_train_test():
     plt.xlabel('Value of k for knn')
     plt.ylabel('Testing accuracy through train_test_split')
     plt.title('Normalization L1')
-    plt.savefig('three_way_audio_test/figures/5.png',bbox_inches='tight')
+    plt.savefig('BUZZ1/figures/5.png',bbox_inches='tight')
 
 #plot_with_train_test()
 
@@ -220,7 +220,7 @@ def plot_with_kfold():
     plt.xlabel('Value of k for knn')
     plt.ylabel('Testing accuracy through K fold')
     plt.title('Normalize L2')
-    plt.savefig('three_way_audio_test/figures/5.png',bbox_inches='tight')
+    plt.savefig('BUZZ1/figures/5.png',bbox_inches='tight')
 
 #plot_with_kfold()
 

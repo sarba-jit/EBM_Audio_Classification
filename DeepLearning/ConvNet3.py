@@ -8,6 +8,7 @@ This code generates the audio classifcation model without the custom layer and r
 two hidden layers, a batch normalization layer, a FC layer with 256 neurons and a dropout of 0.5.
 Also replace the 'n' in the first layer with your choice of filter size. 
 In this paper we used 3,10,30,80,100
+The model is saved in a directory named saved_model
 '''
 
 from tflearn.layers.estimator import regression
