@@ -3,3 +3,6 @@ Deep Learning vs. Standard Machine Learning in Audio Monitoring of Beehives
 The public link for the data. Anyone with the link should be able to download the data.
 
 https://usu.box.com/v/BeePiAudioData
+
+This repo is for the paper "Toward Audio Beehive Monitoring: Deep Learning vs. Standard Machine Learning in Classifying Beehive Audio Samples "
+found at https://doi.org/10.3390/app8091573
